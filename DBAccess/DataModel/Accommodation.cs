@@ -4,7 +4,7 @@ namespace DBAccess.DataModel
 {
     public class Accommodation
     {
-        public long Id { get; set; }
+        public ulong Id { get; set; }
         [Required]
         public DateOnly CheckIn { get; set; }
         [Required]
