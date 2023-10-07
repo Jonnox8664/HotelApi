@@ -30,3 +30,4 @@ HotelAPI/bin/
 *.pidb
 *.svclog
 *.scc
+*.cache
