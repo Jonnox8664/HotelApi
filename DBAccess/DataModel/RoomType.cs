@@ -4,16 +4,10 @@ namespace DBAccess.DataModel
 {
     public class RoomType
     {
-        public long Id { get; set; }
+        public ulong Id { get; set; }
         [Required]
-        public RType Type { get; set; }
-
-        public enum RType
-        {
-            Single,
-            Double,
-            Suite,
-            Deluxe
-        }
+        public string Type { get; set; }
+        [Required]
+        public uint Level { get; set; }
     }
 }

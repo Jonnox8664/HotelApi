@@ -31,3 +31,6 @@ HotelAPI/bin/
 *.svclog
 *.scc
 *.cache
+HotelAPI/obj/Debug/net6.0/
+
+DBAccess/obj/Debug/net6.0/

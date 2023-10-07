@@ -10,8 +10,6 @@ namespace DBAccess.DataModel
         [Required]
         public DateOnly CheckOut { get; set; }
         [Required]
-        public RoomType? RoomType { get; set; }
-        [Required]
         public List<PriceList>? PriceList { get; set; }
     }
 }
