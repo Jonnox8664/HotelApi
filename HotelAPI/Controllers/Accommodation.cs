@@ -1,21 +1,21 @@
 using Microsoft.AspNetCore.Mvc;
-using DBAccess;
+using DBAccess.Manager;
 
 namespace HotelAPI.Controllers
 {
     [ApiController]
-    [Route("api/accomodation")]
-    public class Accomodation : ControllerBase
+    [Route("api/accommodation")]
+    public class Accommodation : ControllerBase
     {
-        private readonly ILogger<Accomodation> _logger;
+        private readonly ILogger<Accommodation> _logger;
 
-        public Accomodation(ILogger<Accomodation> logger)
+        public Accommodation(ILogger<Accommodation> logger)
         {
             _logger = logger;
         }
 
         [HttpPut]
-        public IActionResult CreateAccomodation()
+        public IActionResult CreateAccommodation()
         {
             try
             {
@@ -28,11 +28,11 @@ namespace HotelAPI.Controllers
         }
 
         [HttpGet]
-        public IActionResult ReadAccomodation()
+        public IActionResult ReadAccommodation()
         {
             try
             {
-                var am = new AccomodationManager();
+                var am = new AccommodationManager();
                 return StatusCode(200, am.Reply());
             }
             catch (Exception ex)
@@ -42,7 +42,7 @@ namespace HotelAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult UpdateAccomodation()
+        public IActionResult UpdateAccommodation()
         {
             try
             {
@@ -55,7 +55,7 @@ namespace HotelAPI.Controllers
         }
 
         [HttpDelete]
-        public IActionResult DeleteAccomodation()
+        public IActionResult DeleteAccommodation()
         {
             try
             {

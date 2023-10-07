@@ -2,9 +2,8 @@
 
 namespace HotelAPI.Controllers
 {
-
-[ApiController]
-[Route("api/pricelist")]
+    [ApiController]
+    [Route("api/pricelist")]
     public class PriceList : ControllerBase
     {
         private readonly ILogger<PriceList> _logger;

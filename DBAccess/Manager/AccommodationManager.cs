@@ -1,6 +1,6 @@
-﻿namespace DBAccess
+﻿namespace DBAccess.Manager
 {
-    public class AccomodationManager
+    public class AccommodationManager
     {
         public string Reply()
         {
